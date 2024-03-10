@@ -1,0 +1,41 @@
+﻿<Window x:Class="BenzikovWPF.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BenzikovWPF"
+        mc:Ignorable="d"
+        Title="Калькулятор" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="0.5*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBox VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="5" Grid.Column="1" Grid.Row="1" Name="amX0"></TextBox>
+        <TextBox VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="5" Grid.Column="1" Grid.Row="2" Name="amXk"></TextBox>
+        <TextBox VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="5" Grid.Column="1" Grid.Row="3" Name="amDX"></TextBox>
+        <TextBox VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="5" Grid.Column="1" Grid.Row="4" Name="amA"></TextBox>
+        <TextBox VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="5" Grid.Column="1" Grid.Row="5" Name="amB"></TextBox>
+        <TextBlock Style="{StaticResource R6}" Grid.Column="0" Grid.Row="1" Text="X0 = "></TextBlock>
+        <TextBlock Style="{StaticResource R6}" Grid.Column="0" Grid.Row="2" Text="Xk = "></TextBlock>
+        <TextBlock Style="{StaticResource R6}" Grid.Column="0" Grid.Row="3" Text="DX = "></TextBlock>
+        <TextBlock Style="{StaticResource R6}" Grid.Column="0" Grid.Row="4" Text="A = "></TextBlock>
+        <TextBlock Style="{StaticResource R6}" Grid.Column="0" Grid.Row="5" Text="B = "></TextBlock>
+        <ListBox VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Grid.Row="6" Margin="50,10,50,10" Grid.ColumnSpan="4" Grid.RowSpan="2" Name="LW"></ListBox>
+        <Button VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="10" Grid.Row="8" Grid.Column="1" Grid.ColumnSpan="1" Content="Выполнить" FontSize="20" Click="Button_Click" Style="{StaticResource R5}" Height="30"></Button>
+        <Button VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="10" Grid.Row="8" Grid.Column="2" Grid.ColumnSpan="1" Content="Вернуться" FontSize="20" Style="{StaticResource R5}" Height="30" Click="PR6"></Button>
+    </Grid>
+</Window>
